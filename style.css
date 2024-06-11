@@ -1,0 +1,147 @@
+body {
+     font-family: Arial, sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: linear-gradient(45deg, #6A11CB, #2575FC);
+     margin: 0;
+ }
+
+ .container {
+     background-color: white;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 500px;
+     text-align: center;
+     display: none;
+ }
+
+ .welcome-container {
+     display: flex;
+     flex-direction: column;
+     height: 400px;
+     justify-content: center;
+     align-items: center;
+     color: wheat;
+     background: url(https://img.freepik.com/free-vector/flat-geometric-background_23-2148945952.jpg?size=626&ext=jpg&ga=GA1.1.1279692117.1715433072&semt=ais_user
+);
+     background-size: cover;
+     background-position: center;
+ }
+
+ .welcome-container button {
+     padding: 20px 30px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 15px;
+     font-weight: 700;
+ }
+
+ .welcome-container button:hover {
+     background: linear-gradient(45deg, #fc466b, #3f5efb);
+ }
+
+ .quiz-container {
+     width: 450px;
+     background: linear-gradient(135deg, #5ee7df, #b490ca);
+     padding: 20px;
+ }
+
+ .quiz-header h2 {
+     margin-bottom: 20px;
+ }
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+ }
+
+ li {
+     margin: 10px 0;
+     padding: 10px;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .correct {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .correct::after {
+     content: '✔';
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: white;
+     font-size: 1.5em;
+ }
+
+ .incorrect {
+     background-color: #dc3545;
+     color: white;
+ }
+
+ .incorrect::after {
+     content: '✘';
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: white;
+     font-size: 1.5em;
+ }
+
+ .button {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     display: none;
+ }
+
+ .button:hover {
+     background-color: #0056b3;
+ }
+
+ .btn {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ #description {
+     margin-top: 20px;
+     color: #dc3545;
+
+     display: none;
+     font-weight: 700;
+     font-size: 20px;
+     ;
+ }
+
+ .color-card {
+     margin: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: background-color 0.5s ease;
+ }
+
+ .color-card:hover {
+     background-position: 0% 100%;
+     transition: background 5s ease;
+ }
