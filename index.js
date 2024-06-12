@@ -25,7 +25,43 @@ const quizData = [
         d: "main",
         correct: "b",
         description: "To select an element with id 'main', use #main in CSS."
-    },
+    }, {
+        "question": "Which keyword is used to declare a constant in JavaScript?",
+        a: "const",
+        b: "var",
+        c: "let",
+        d: "constant",
+        correct: "a",
+        "description": "The const keyword is used to declare a constant (a variable that cannot be reassigned)."
+    }, {
+        "question": "Which of the following is NOT a JavaScript data type?",
+        a: "undefined",
+        "b": "number",
+        "c": "boolean",
+        "d": "float",
+        "correct": "d",
+        "description": "JavaScript does not have a float data type; numbers are stored as double-precision floating-point numbers."
+    }, {
+        "question": "Which method can be used to find the length of a string in JavaScript?",
+        a: "length()",
+        "b": "size()",
+        "c": "len()",
+        "d": "length",
+        "correct": "d",
+        "description": "The length property (not method) is used to find the length of a string in JavaScript."
+    }, {
+        "question": "How do you add a comment in JavaScript?",
+        a: "# This is a comment",
+        "b": "// This is a comment",
+        "c": "<!-- This is a comment -->",
+        "d": "/* This is a comment */",
+        "correct": "b",
+        "description": "Single-line comments in JavaScript are added using two forward slashes (//)."
+    }
+
+
+
+    ,
     {
         question: "Which of the following is a correct way to declare a variable in JavaScript?",
         a: "variable myVar;",
@@ -134,7 +170,7 @@ function restartQuiz() {
             <h2 id="question">Question text</h2>
             <ul id="answers">
                 <li id="a" onclick="selectAnswer('a')">Answer A</li>
-                <li id="b" onclick="selectAnswer('b')">Answer B</li>
+                <li id=b onclick="selectAnswer('b')">Answer B</li>
                 <li id="c" onclick="selectAnswer('c')">Answer C</li>
                 <li id="d" onclick="selectAnswer('d')">Answer D</li>
             </ul>
@@ -145,4 +181,3 @@ function restartQuiz() {
     `;
     loadQuiz();
 }
- 
