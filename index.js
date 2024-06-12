@@ -37,7 +37,7 @@ const quizData = [
         "question": "Which of the following is NOT a JavaScript data type?",
         a: "undefined",
         "b": "number",
-        "c": "boolean",
+        c: "boolean",
         "d": "float",
         "correct": "d",
         "description": "JavaScript does not have a float data type; numbers are stored as double-precision floating-point numbers."
